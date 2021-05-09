@@ -1,0 +1,11 @@
+<div class="page-container">
+
+  <div class="custom-card" *ngIf="getUserDetails">
+    <h4>Hi {{getUserDetails?.name}}!!</h4>
+    <p class="mb-0">Role: {{getUserDetails?.role}}</p>
+    <p>Email: {{getUserDetails?.email}}</p>
+
+    <button class="btn btn-primary" (click)="logout()">Logout</button>
+  </div>
+
+</div>
